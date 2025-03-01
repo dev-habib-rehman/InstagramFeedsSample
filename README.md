@@ -11,14 +11,17 @@ A performant Android scrollable feed consisting of a few posts to display a sing
     - Auto-play visible videos
     - Pause on scroll
     - TextureView rendering
+
 **Mixed Media Support**
     - Image posts
     - Video posts
     - Combined image+video posts
+
 **Performance Optimizations**
     - RecyclerView view recycling
     - Player instance pooling
     - Media content caching
+
 **Smooth Scrolling**
     - Prefetching mechanism
 

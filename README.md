@@ -28,6 +28,8 @@ A performant Android scrollable feed consisting of a few posts to display a sing
 ## Tech Stack
 - **Language**: Kotlin
 - **Architecture**: MVVM
+- **Data Layer**: Repository Pattern 
+- **UI Layer**: Views
 - **Dependency Injection**: Hilt
 - **Media Playback**:
     - Android Media3 ExoPlayer
@@ -37,6 +39,16 @@ A performant Android scrollable feed consisting of a few posts to display a sing
     - Media3 SimpleCache (50MB)
     - Glide disk cache
 - **Build System**: Gradle
+
+## Media3 API Stability Note
+
+This project uses Android Media3's `@UnstableApi`-annotated components as:
+1. Required for core video playback functionality
+2. Following [Google's official guidance](https://developer.android.com/media/media3/exoplayer/migration-guide)
+3. Note about using `@UnstableApi`annotations: https://developer.android.com/reference/androidx/media3/common/util/UnstableApi
+4. With explicit opt-in via `@OptIn(UnstableApi::class)`
+
+These APIs are considered stable for production use per Media3's documentation.
 
 ## Clone the Repository: 
  - https://github.com/dev-habib-rehman/InstagramFeedsSample**

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFeedFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLikeFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_heart_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLikeCountFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_99_6k"
+            android:layout_marginStart="6dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLikeFeedFooter"
+            app:layout_constraintStart_toEndOf="@id/ivLikeFeedFooter"
+            app:layout_constraintTop_toTopOf="@+id/ivLikeFeedFooter" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCommentFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_comment_32"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/tvLikeCountFeedFooter"
+            app:layout_constraintTop_toTopOf="@+id/ivLikeFeedFooter"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLikeFeedFooter"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCommentCountFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_6k"
+            android:layout_marginStart="6dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCommentFeedFooter"
+            app:layout_constraintStart_toEndOf="@id/ivCommentFeedFooter"
+            app:layout_constraintTop_toTopOf="@+id/ivCommentFeedFooter" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivShareFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_send_24"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/tvCommentCountFeedFooter"
+            app:layout_constraintTop_toTopOf="@+id/ivLikeFeedFooter"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLikeFeedFooter"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvShareCountFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_9k"
+            android:layout_marginStart="6dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivShareFeedFooter"
+            app:layout_constraintStart_toEndOf="@id/ivShareFeedFooter"
+            app:layout_constraintTop_toTopOf="@+id/ivShareFeedFooter" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSaveFeedFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_bookmark_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivLikeFeedFooter"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLikeFeedFooter"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescriptionFeedFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/ivLikeFeedFooter"
+            android:text="@string/lorem_dummy_text"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

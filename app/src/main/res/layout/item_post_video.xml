@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMainVideoPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/pvVideoPost"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            app:surface_type="texture_view"
+            app:resize_mode="zoom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/ltHeaderVideoPost"
+            layout="@layout/feed_post_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/ltFooterVideoPost"
+            layout="@layout/feed_post_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/pvVideoPost" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

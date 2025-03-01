@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMainMixedPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/ltHeaderMixedPost"
+            layout="@layout/feed_post_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImageMixedPost"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/pexels_arts_1"
+            app:layout_constraintEnd_toStartOf="@+id/pvVideoMixedPost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ltHeaderMixedPost" />
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/pvVideoMixedPost"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            app:surface_type="texture_view"
+            app:resize_mode="zoom"
+            app:layout_constraintBottom_toBottomOf="@id/ivImageMixedPost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivImageMixedPost"
+            app:layout_constraintTop_toTopOf="@id/ivImageMixedPost" />
+
+        <include
+            android:id="@+id/ltFooterMixedPost"
+            layout="@layout/feed_post_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivImageMixedPost" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
